@@ -609,16 +609,18 @@ a {
   max-width: 260px;
   margin: 0 auto;
   aspect-ratio: 2 / 3;
+  min-height: 350px; /* Fallback for flex collapse on Safari */
   background-color: #E8DFD5;
   position: relative;
   overflow: hidden;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
 }
 @media (min-width: 768px) {
   .product-cover {
     max-width: 100%;
+    min-height: unset;
   }
 }
 
@@ -877,7 +879,7 @@ a {
 
 .condition-option {
   flex: 1;
-  padding: var(--space-3);
+  padding: var(--space-2) var(--space-1);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-md);
   text-align: center;
@@ -915,8 +917,8 @@ a {
 .quality-checks-box {
   background-color: var(--color-bg-primary);
   border-radius: var(--radius-md);
-  padding: var(--space-4);
-  margin-bottom: var(--space-6);
+  padding: var(--space-3);
+  margin-bottom: var(--space-4);
   border: 1px solid var(--color-border);
 }
 
@@ -950,6 +952,15 @@ a {
   margin-top: 2px;
 }
 
+@media (min-width: 768px) {
+  .condition-option {
+    padding: var(--space-4);
+  }
+  .quality-checks-box {
+    padding: var(--space-6);
+    margin-bottom: var(--space-8);
+  }
+}
 .trust-badges-container {
   display: flex;
   justify-content: space-between;
