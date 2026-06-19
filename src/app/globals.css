@@ -557,6 +557,8 @@ a {
 }
 .product-cover {
   width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
   aspect-ratio: 2 / 3;
   background-color: #E8DFD5;
   position: relative;
@@ -564,6 +566,11 @@ a {
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
+}
+@media (min-width: 768px) {
+  .product-cover {
+    max-width: 100%;
+  }
 }
 
 .product-details-col {
