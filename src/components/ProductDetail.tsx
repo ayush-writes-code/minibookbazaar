@@ -218,7 +218,7 @@ export default function ProductDetail({ book, allBooks, extraDetails }: { book: 
                   <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
-              <div className="trust-badge-text">7 Million +<br/>Happy Customers</div>
+              <div className="trust-badge-text">1 Million +<br/>Happy Customers</div>
             </div>
             <div className="trust-badge-item">
               <div className="trust-badge-icon">
